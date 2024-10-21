@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="password" placeholder="password" />
+    <button onclick="myFunction()">Submit</button>
+    <p id="pr"></p>
+    <!-- pr stands for paragraph -->
+    <script>
+      "use strict";
+      var psw = document.getElementById("password");
+
+      function myFunction() {
+        var displayPassword = document.getElementById("pr");
+        displayPassword.innerText = "Welcome back01" + psw.value;
+      }
+    </script>
+  </body>
+</html>

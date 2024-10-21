@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Practice</title>
+  </head>
+  <body>
+    <main>
+      <div id="greetingDiv">Hola</div>
+
+      <button onclick="doSomething()">Click Me</button>
+    </main>
+
+    <script>
+      "use strict";
+      var greetingDiv = document.getElementById("greetingDiv");
+      console.log(greetingDiv);
+      greetingDiv.innerText = "Hello";
+      console.log(greetingDiv);
+
+      function doSomething() {
+        const greetingDiv = document.getElementById("greetingDiv");
+        greetingDiv.innerText = "Bonjour";
+      }
+    </script>
+  </body>
+</html>
